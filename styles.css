@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100vw;
+    background:lightgrey;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagenes { 
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenes img { 
+    width: 300px;
+    height: 300px;
+    display: none;
+}
+
+.imagenes img:first-child {
+    display: block; 
+}
+
+
+button {
+    background: white;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border: silver 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .carrusel {
+        width: 90%;
+    }
+    button{
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carrusel {
+        width: 95%;
+    }
+
+    button{
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+    .imagenes img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 1024px){
+    .carrusel{
+        width: 75%;
+        max-width: 600px;
+    }
+}
